@@ -1,0 +1,11 @@
+/* MEDIA QUERIES */
+
+@media (max-width: 76rem){
+    /* 1215px / 16 = 75.9375 */
+    /* Round it up to 75.9375 = { 75.9375 * 16 = 1215} */
+
+    :root {
+        font-size: 56.25%;
+        /* 9px / 16px = 56.25% */
+    }
+}
