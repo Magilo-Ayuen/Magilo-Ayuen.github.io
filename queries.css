@@ -8,4 +8,129 @@
         font-size: 56.25%;
         /* 9px / 16px = 56.25% */
     }
+
+    header {
+        margin-bottom: 8rem;
+    }
+
+    /* MY SKILLS */
+    .skills-grid .card .percent {
+        width: 17rem;
+        height: 17rem;
+    }
+    .skills-grid .card .percent svg {
+        width: 17rem;
+        height: 17rem;
+        position: relative;
+
+    }
+
+
+
+    /* MY SERVICES */
+    .my-services {
+        display: flex;
+        flex-direction: column;
+        height: 150rem;
+        margin-bottom: 6rem;
+    }
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        border: 1px yellow solid;
+        margin: 5rem auto;
+        width: 70%;
+        height: 80rem;
+        row-gap: 1rem;
+        column-gap: 3rem;
+    }
+    .service-2, .service-4 {
+        align-self: end;
+    }
+}
+@media (max-width: 64rem) {
+    /* 1024 / 16 = 64 */
+     :root {
+        font-size: 43.75%;
+        /* 7px / 16px = 43.75% */
+
+    }
+    .btn {
+        padding: 1rem 4rem;
+        font-size: 2rem;
+    }
+       /* MY SKILLS */
+    .skills-grid .card .percent {
+        width: 21rem;
+        height: 21rem;
+    }
+    .skills-grid .card .percent svg {
+        width: 21rem;
+        height: 21rem;
+        position: relative;
+
+    }
+}
+@media (max-width: 48rem) {
+    /* 768 / 16 = 48 */
+    :root {
+        font-size: 37.5%;
+        /* 6 / 16 =  37.5*/
+    }
+    /* MY SKILLS  */
+    .skills-grid .card  {
+        width: 35rem;
+        height: 35rem;
+    }
+     .skills-grid .card .percent {
+        width: 24rem;
+        height: 24rem;
+    }
+    .skills-grid .card .percent svg {
+        width: 24rem;
+        height: 24rem;
+        position: relative;
+
+    }
+}
+@media (max-width: 36rem){
+    /* 576 / 16 = 36 */
+    :root {
+        font-size: 31.25%;
+        /*  5 / 16 = 31.25 */
+    }
+    /* NAVBAR TO 3 BAR-MENU  */
+
+
+
+
+
+    /* HERO SECTION  */
+    .hero-section {
+        grid-template-columns: 1fr;
+          height: 120rem;
+    }
+    .hero-img {
+    max-width: 350px;
+    width: 100%;
+    } 
+
+    /* MY SKILLS  */
+    .skills-grid .card  {
+        width: 39rem;
+        height: 39rem;
+    }
+      .skills-grid .card .percent {
+        width: 29rem;
+        height: 29rem;
+    }
+    .skills-grid .card .percent svg {
+        width: 29rem;
+        height: 29rem;
+        position: relative;
+
+    }
 }

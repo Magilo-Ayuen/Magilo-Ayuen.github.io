@@ -409,12 +409,14 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px red solid;
 }
 .skills-grid .card .percent {
     position: relative;
     width: 15rem;
     height: 15rem;
     /* background: red; */
+    border: 1px green solid;
 }
 .skills-grid .card .percent svg {
     position: relative;
@@ -513,17 +515,27 @@ nav ul li a {
 
 /* --------- SERVICES SECTION ---------*/
 
-.my-services {
+/* .my-services {
     margin-bottom: 10rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5rem;
     height: 60rem;
+} */
+
+.my-services {
+    margin-bottom: 10rem;
+    display: flex;
+    gap: 5rem;
+    height: 60rem;
+    border: 1px red solid;
+    margin-bottom: 10rem;
 }
 .intro-services {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-basis: 50%;
 }
 .services-heading {
     margin: 1.5rem 0;
@@ -550,7 +562,7 @@ nav ul li a {
 .services-grid {
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     width: 60rem;
     row-gap: 1rem;
     column-gap: 5rem;
@@ -755,6 +767,13 @@ nav ul li a {
     display: flex;
     align-items: center;
 }
+.profile-info img {
+    max-width: 75px;
+    width: 100%;
+}
+.text-box {
+    margin-left: 2rem;
+}
 .clients-name{
     font-size: 2.4rem;
     font-weight: 600;
@@ -789,7 +808,7 @@ nav ul li a {
     font-size: 4.8rem;
     margin: 5rem 0;
 }
-.contact-left a{
+.contact-email{
     color: var(--tertiary-tint);
     font-size: 4rem;
 }
@@ -856,7 +875,7 @@ form .btn2 {
     padding: 1.4rem 5rem;
     border-radius: 10px;
     text-decoration: none;
-    color: white;
+    color: var(--white);
     transition: background .5s;
     font-size: 3rem;
 
