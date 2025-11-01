@@ -95,6 +95,15 @@
         position: relative;
 
     }
+    .menu-button {
+        display: block;
+        place-self: center;
+    }
+
+    /* HARMBURGER MENU */
+    .hideOnSmallerDevices {
+        display: none;
+    }
 }
 @media (max-width: 36rem){
     /* 576 / 16 = 36 */

@@ -11,3 +11,21 @@ const swiper = new Swiper('.testimonials-slider', {
         }
     }
 });
+
+// SIDEBAR 
+
+// function showSideBar() {
+//     const sidebar = document.querySelector(".sideBar");
+//     sidebar.style.display="flex";
+// }
+// SHOW SIDEBAR
+const showSideBar = () => {
+    const sidebar = document.querySelector(".sideBar");
+    sidebar.style.display = "flex";
+}
+
+// HIDE SIDEBAR
+const hideSideBar = () => {
+    const hidesidebar = document.querySelector(".sideBar");
+    hidesidebar.style.display = "none";
+}

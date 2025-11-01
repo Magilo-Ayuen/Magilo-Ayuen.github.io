@@ -25,16 +25,30 @@
         <!-- HEADER SECTION NAVBAR & HERO-SECTION  -->
 
         <header>
-            <div class="logo">
-                <a href="index.html"><img src="iMAGES/logo-apple-ar.svg" alt="logo"></a>
+            <div>
+                <a class="logo-type" href="index.html"><p>MA<span class="gilo">GILO</span>AYUEN</p></a>
+                <!-- <a href="index.html"><img src="iMAGES/logo-apple-ar.svg" alt="logo"></a> -->
             </div>
             <nav>
+                <ul class="sideBar">
+                    <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+
+
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">PORTFOLIO</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li class="hideOnSmallerDevices"><a href="#">HOME</a></li>
+                    <li class="hideOnSmallerDevices"><a href="#">ABOUT</a></li>
+                    <li class="hideOnSmallerDevices"><a href="#">SERVICES</a></li>
+                    <li class="hideOnSmallerDevices"><a href="#">PORTFOLIO</a></li>
+                    <li class="hideOnSmallerDevices"><a href="#">CONTACT</a></li>
+                    <li class="menu-button" onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                     <!-- <li><a href=""><img onclick=showSideBar() src="iMAGES/menu_bars.svg" alt="menu"></a></li> -->
+                    
                 </ul>
             </nav>
         </header>
@@ -43,9 +57,9 @@
 
         <section class="hero-section">
             <div class="intro-msg">
-                <p class="subtitle">Hello,</p>
-                <h1 class="username-1">I'm John Doe<span class="name-dot">.</span></h1>
-                <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut blanditiis voluptatem debitis eos, consequuntur consequatur facere adipisci explicabo placeat accusamus rem, dolore labore commodi at.</p>
+                <p class="subtitle">Hello &#x1F44B;&#x1F3FE;,</p>
+                <h1 class="username-1">I'm Magilo Ayuen<span class="name-dot">.</span></h1>
+                <p class="hero-text">I'm a self-taught front-end developer based in Nairobi, Kenya, with a passion for building clean, responsive, and user-friendly web interfaces.</p>
                 
                 <div class="contact-me-1">
                     <a class="btn" href="">Hire Me</a>
@@ -64,14 +78,25 @@
             <section class="main-section">
                 <!-- PROFILE -->
                 <div class="about-me-1">
-                    <img src="iMAGES/product-5.jpg" alt="profile">
+                    <img src="iMAGES/profile_1.jpg" alt="profile">
                     <div class="about-me">
                         
                             <p class="subtitle">WHO IS JOHN DOE?</p>
                             <h1 class="about-me-heading">Abit About Me.</h1> 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quaerat nesciunt earum voluptatibus <br>ut consectetur tempore aperiam minima quis adipisci amet commodi, quas ipsum officia exercitationem sint, velit nostrum minus.
-                            Sint at cum hic adipisci quos, sed maiores obcaecati reprehenderit tempore voluptatem illo vitae molestias? <br>Quibusdam consequatur reiciendis tenetur illo iste ea fuga consequuntur! Tenetur modi quo fugiat hic aspernatur?</p>
-                                               
+
+                            <div class="paragraphs-about-me">
+                                <div class="statement-1">
+                                    <p>I am a self-taught front-end developer with a passion for building engaging and user-friendly web experiences.</p>
+                                </div>
+                                <div class="statement-2">
+                                    <p>I love creating web projects that combine clean design with functional interactivity, bringing ideas to life through code.</p>
+                                </div>
+                                <div>
+                                    <p>Constantly exploring new technologies and keeping up with the latest web development trends, I’m dedicated to improving my skills and staying ahead in the ever-evolving world of the web.</p>
+                                </div>
+                                  
+                            </div>
+                            
                     </div>
         
                 </div>
@@ -81,7 +106,7 @@
                     <div class="my-skills">
                         <p class="subtitle">MY SKILLS</h3>
                         <h1 class="skills-heading">Technologies I work with</h1>
-                        <p class="skills-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aliquam voluptatum architecto et non beatae neque accusamus voluptas suscipit magnam libero, nihil tempora labore quae consequatur quos magni blanditiis soluta.</p>
+                        <p class="skills-text">I’ve built my web development journey around modern technologies like HTML, CSS, JavaScript, React, and Node.js, crafting responsive and dynamic web applications. My focus is on creating clean, user-centered designs while continuously exploring new tools and frameworks to enhance performance and interactivity.</p>
                     </div>
 
                 <!-- PROGRESS BAR -->
@@ -243,7 +268,7 @@
                 <div class="intro-services">
                     <p class="subtitle">MY SERVICES</p>
                     <h1 class="services-heading">Some of the things i do for my Clients.</h1>
-                    <p class="services-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut tenetur impedit recusandae repudiandae eum consequuntur cumque, modi incidunt voluptates laudantium molestiae quidem natus vitae iste corrupti doloremque, porro quisquam eos.</p>
+                    <p class="services-text">I provide web development services that help clients on their online visibility through webpages on the internet. With a focus on customer satisfaction, I deliver tailored solutions that bring ideas to life and drive measurable results.</p>
                     
                     <div class="services-expr">
                         <div class="years-exp">
@@ -303,7 +328,7 @@
 
                 <div class="projects">
                         <div class="project-layer">
-                            <a href=""><img src="iMAGES/Navbarthumbnail.jpg" alt="" width="600px"></a>
+                            <a href=""><img src="iMAGES/project_01.png" alt="" width="600px"></a>
                             <div class="layer">
                                 <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 <h3>Live Demo</h3>
@@ -313,13 +338,12 @@
                         
                         <div class="project-1-text">
                             <h2>0 1</h2>
-                            <h1 class="project-heading">Project 1 APP</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio consequatur repellendus ex odit eum laboriosam natus libero, quae nam animi, rem dolorem blanditiis rerum quisquam aperiam velit voluptatibus dignissimos.
-                            Modi deserunt at ducimus similique quidem qui nisi odit eos itaque consequatur? Suscipit itaque, veritatis exercitationem error tempora, impedit officia veniam, ipsum fuga quos reprehenderit explicabo harum ratione voluptas corporis?</p>
+                            <h1 class="project-heading">Portfolio 1.0</h1>
+                            <p>This is Portfolio 1.0 project which is my showroom. It was built using HTML, CSS and Vanilla JS.<br> It will be getting regular updates every now and then. Stay tune!</p>
                         </div>
 
                         <div class="project-layer">
-                            <a href=""><img src="iMAGES/Navbarthumbnail.jpg" alt="" width="600px"></a>
+                            <a href="#"><img src="iMAGES/project_02.png" alt="" width="600px"></a>
                             <div class="layer">
                                 <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 <h3>Live Demo</h3>
@@ -330,12 +354,11 @@
                         <div class="project-2-text">
                             <h2>0 2</h2>
                             <h1  class="project-heading">Project 1 APP</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio consequatur repellendus ex odit eum laboriosam natus libero, quae nam animi, rem dolorem blanditiis rerum quisquam aperiam velit voluptatibus dignissimos.
-                            Modi deserunt at ducimus similique quidem qui nisi odit eos itaque consequatur? Suscipit itaque, veritatis exercitationem error tempora, impedit officia veniam, ipsum fuga quos reprehenderit explicabo harum ratione voluptas corporis?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio consequatur repellendus ex odit eum laboriosam natus libero, quae nam animi, rem dolorem blanditiis rerum quisquam aperiam velit voluptatibus dignissimos.</p>
                         </div>
 
                         <div class="project-layer">
-                            <a href=""><img src="iMAGES/Navbarthumbnail.jpg" alt="" width="600px"></a>
+                            <a href="#"><img src="iMAGES/project_02.png" alt="" width="600px"></a>
                             <div class="layer">
                                 <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 <h3>Live Demo</h3>
@@ -346,14 +369,13 @@
                         <div class="project-3-text">
                             <h2>0 3</h2>
                             <h1 class="project-heading">Project 1 APP</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio consequatur repellendus ex odit eum laboriosam natus libero, quae nam animi, rem dolorem blanditiis rerum quisquam aperiam velit voluptatibus dignissimos.
-                            Modi deserunt at ducimus similique quidem qui nisi odit eos itaque consequatur? Suscipit itaque, veritatis exercitationem error tempora, impedit officia veniam, ipsum fuga quos reprehenderit explicabo harum ratione voluptas corporis?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio consequatur repellendus ex odit eum laboriosam natus libero, quae nam animi, rem dolorem blanditiis rerum quisquam aperiam velit voluptatibus dignissimos.</p>
                         </div>
 
                         <div class="project-layer">
-                            <a href=""><img src="iMAGES/Navbarthumbnail.jpg" alt="" width="600px"></a>
+                            <a href=""><img src="iMAGES/project_02.png" alt="" width="600px"></a>
                             <div class="layer">
-                                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 <h3>Live Demo</h3>
                                 
                             </div>
@@ -362,8 +384,7 @@
                         <div class="project-4-text">
                             <h2>0 4</h2>
                             <h1 class="project-heading">Project 1 APP</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio consequatur repellendus ex odit eum laboriosam natus libero, quae nam animi, rem dolorem blanditiis rerum quisquam aperiam velit voluptatibus dignissimos.
-                            Modi deserunt at ducimus similique quidem qui nisi odit eos itaque consequatur? Suscipit itaque, veritatis exercitationem error tempora, impedit officia veniam, ipsum fuga quos reprehenderit explicabo harum ratione voluptas corporis?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio consequatur repellendus ex odit eum laboriosam natus libero, quae nam animi, rem dolorem blanditiis rerum quisquam aperiam velit voluptatibus dignissimos.</p>
                         </div>
 
                 </div>
@@ -381,8 +402,7 @@
                 <div class="testimonials-header-text">
                      <p class="subtitle">TESTIMONIALS</p>
                     <div class="testimonials-header">
-                        <h1>Don't take my words for it! Hear it from My Clients.
-                        </h1>
+                        <h1>Don't take my words for it! Hear it from My Clients.</h1>
                     </div>
                 </div>
                 
@@ -462,10 +482,7 @@
 
 
             <section class="contact">
-                
-
-                
-                            
+    
                             <div class="contact-left">
                                 <p class="subtitle">CONTACT ME</p>
                                 <h1>Contact Me</h1>
@@ -474,8 +491,8 @@
                                 </div>
                                 
                                 <div class="social-iconss">
-                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fa-brands fa-github"></i></i></a>
+                                    <a href=""><i class="fa-brands fa-x-twitter"></i></i></a>
                                     <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                                 </div>
                         
@@ -497,12 +514,13 @@
 
         <footer>
             <div class="logo">
-                <a href=""><img src="iMAGES/logo-apple-ar.svg" alt="logo"></a>
+                <a class="logo-type footerLogo" href="index.html"><p>MA<span class="gilo f-span">GILO</span>AYUEN</p></a>
+                <!-- <a href=""><img src="iMAGES/logo-apple-ar.svg" alt="logo"></a> -->
             </div>
            <p>Made With <img class="footer-heart" src="iMAGES/heart-svg.png"> by Magilo! </p>
            <div class="social-icons-footer">
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
                 <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </footer>
