@@ -92,7 +92,7 @@ Shade: #212529
 
     /* LETTER SPACING */
 
-    --letter-spacing-tight: -2px;
+    --letter-spacing-tight: .5px;
 
     /* FONT FAMILY */
     --font-family: 'Poppins', sans-serif;
@@ -811,7 +811,6 @@ nav ul li a {
     color: var(--tertiary-tint);
     font-size: 2.5rem;
 }
-.com
 .contact-download {
     font-size: 3.2rem;
     color: var(--tertiary-tint);
