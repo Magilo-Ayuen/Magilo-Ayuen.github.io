@@ -901,6 +901,11 @@ footer {
     position: absolute;
     height: 8rem;
 }
+.copy-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .footer-heart {
     fill: var(--secondary-base);
     width: 15px;

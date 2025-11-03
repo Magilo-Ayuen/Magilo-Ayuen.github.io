@@ -113,7 +113,7 @@
     /* NAVBAR TO 3 BAR-MENU  */
 
     header {
-        margin-bottom: 3rem;
+        margin-bottom: 8rem;
     }
 
     /* HERO SECTION  */
@@ -156,6 +156,9 @@
         font-size: 25%;
         /* 4 / 16 =  .25*/
     }
+    header {
+        margin-bottom: 7rem;
+    }
      /* MY SKILLS  */
     .skills-grid .card  {
         width: 45rem;
@@ -171,11 +174,6 @@
         position: relative;
 
     }
-    /* .testimonials-item img {
-        max-width: 60px;
-        width: 100%;
-    } */
-
     .profile-info img {
         max-width: 50px;
         width: 100%;
