@@ -40,7 +40,6 @@
         justify-self: center;
         justify-content: center;
         align-items: center;
-        border: 1px yellow solid;
         margin: 5rem auto;
         width: 70%;
         height: 80rem;
@@ -113,18 +112,19 @@
     }
     /* NAVBAR TO 3 BAR-MENU  */
 
-
-
-
+    header {
+        margin-bottom: 3rem;
+    }
 
     /* HERO SECTION  */
     .hero-section {
         grid-template-columns: 1fr;
-          height: 120rem;
+        height: 100rem;
     }
     .hero-img {
     max-width: 350px;
     width: 100%;
+    align-self: start;
     } 
 
     /* MY SKILLS  */
@@ -141,5 +141,43 @@
         height: 29rem;
         position: relative;
 
+    }
+    /* SERVICES */
+    .my-services {
+        height: 130rem;
+    }
+    .services-grid {
+        width: 90%;
+    }
+}
+@media (max-width: 28rem){
+    /* 445 / 16 = 27.8125 */
+    :root {
+        font-size: 25%;
+        /* 4 / 16 =  .25*/
+    }
+     /* MY SKILLS  */
+    .skills-grid .card  {
+        width: 45rem;
+        height: 45rem;
+    }
+      .skills-grid .card .percent {
+        width: 36rem;
+        height: 35rem;
+    }
+    .skills-grid .card .percent svg {
+        width: 36rem;
+        height: 36rem;
+        position: relative;
+
+    }
+    /* .testimonials-item img {
+        max-width: 60px;
+        width: 100%;
+    } */
+
+    .profile-info img {
+        max-width: 50px;
+        width: 100%;
     }
 }

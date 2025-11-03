@@ -530,7 +530,6 @@ nav ul li a {
 /* --------- SERVICES SECTION ---------*/
 
 .my-services {
-    margin-bottom: 10rem;
     display: flex;
     gap: 5rem;
     height: 60rem;
@@ -767,7 +766,7 @@ nav ul li a {
     align-items: center;
 }
 .profile-info img {
-    max-width: 75px;
+    max-width: 65px;
     width: 100%;
 }
 .text-box {
@@ -807,10 +806,12 @@ nav ul li a {
     font-size: 4.8rem;
     margin: 5rem 0;
 }
-.contact-email{
+.contact-email a{
+    display: inline-block;
     color: var(--tertiary-tint);
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
+.com
 .contact-download {
     font-size: 3.2rem;
     color: var(--tertiary-tint);
@@ -905,7 +906,9 @@ footer {
     width: 15px;
 }
 .social-icons-footer {
-    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .social-icons-footer a{
     text-decoration: none;
