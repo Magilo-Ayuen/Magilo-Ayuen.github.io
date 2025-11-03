@@ -119,6 +119,9 @@ Shade: #212529
 
     /* FOR PROGRESS BARS */
     --clr: var(--secondary-tint);
+
+    /* FOR SMOOTH SCROLL */
+    scroll-behavior: smooth;
 }
 body {
     background-color: var(--primary-shade);
@@ -161,6 +164,7 @@ a {
     text-decoration: none;
     font-size: 1.6rem;
     display: inline-block;
+    cursor: pointer;
 }
 li {
     list-style: none;
@@ -252,9 +256,9 @@ header {
 }
 .gilo {
     color: var(--secondary-tint);
-    padding: .5px 2px;
+    padding: .05rem .2rem;
     border: 3px solid var(--secondary-shade);
-    margin: 0 3px;
+    margin: 0 .3rem;
     border-radius: 5px;
 }
  .f-span {
@@ -294,6 +298,7 @@ nav ul li a {
 
 .menu-button {
     display: none;
+    place-self: center;
 }
 
 /* SIDEBAR */
