@@ -173,7 +173,7 @@ span{
     display: inline-block;
 }
 .subtitle {
-    color: aqua;
+    color: var(--secondary-tint);
 }
 
 
@@ -187,7 +187,7 @@ span{
     padding: 1.4rem 5rem;
     border-radius: 10px;
     text-decoration: none;
-    color: white;
+    color: var(--white);
     transition: background .5s;
     font-size: 3rem;
     cursor: pointer;
@@ -691,7 +691,18 @@ nav ul li a {
 }
 .project-2-text {
     grid-row: 2 / 3;
-    
+    position: relative;
+}
+.project-2-text a{
+    display: flex;
+    justify-content: right;
+    margin: 1rem 5rem 1rem 0;
+    color: var(--secondary-tint);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.project-2-text a:hover {
+    color: var(--tertiary-tint);
 }
 .project-4-text {
     grid-row: 4 /5;

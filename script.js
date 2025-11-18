@@ -29,3 +29,26 @@ const hideSideBar = () => {
     const hidesidebar = document.querySelector(".sideBar");
     hidesidebar.style.display = "none";
 }
+
+// READ MORE - READ LESS
+
+const moreContent = document.querySelector(".moreContent");
+const toggleLinkReadMore = document.querySelector(".toggleLinkReadMore");
+
+const isShowMore = false;
+ 
+toggleLinkReadMore.addEventListener('click', ()=>{
+    isShowMore = !isShowMore;
+    if (isShowMore){
+        moreContent.style.display = "block";
+        toggleLinkReadMore.textContent = "Read Less";
+
+    } else {
+        moreContent.style.display = "none";
+        toggleLinkReadMore.textContent = "Read More";
+    }
+});
+
+
+
+
