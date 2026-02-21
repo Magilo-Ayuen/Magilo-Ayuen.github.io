@@ -72,7 +72,7 @@ Shade: #212529
     font-size: 62.5%;
 
     overflow-x: hidden;
-    /* update to rems */
+   
     --text-sm: 1.2rem;
     --text-base: 1.6rem;
     --text-paragraph: 2rem;
