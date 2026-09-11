@@ -33,11 +33,12 @@ const hideSideBar = () => {
 // READ MORE - READ LESS
 
 const moreContent = document.querySelector(".moreContent");
-const toggleLinkReadMore = document.querySelector(".toggleLinkReadMore");
+const toggleLinkReadMore = document.querySelector(".toggleButtonReadMore");
 
-const isShowMore = false;
+let isShowMore = false;
  
-toggleLinkReadMore.addEventListener('click', ()=>{
+toggleLinkReadMore.addEventListener('click', (event)=>{
+    event.preventDefault();
     isShowMore = !isShowMore;
     if (isShowMore){
         moreContent.style.display = "block";
