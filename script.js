@@ -32,24 +32,24 @@ const hideSideBar = () => {
 
 // READ MORE - READ LESS
 
-const moreContent = document.querySelector(".moreContent");
-const toggleLinkReadMore = document.querySelector(".toggleButtonReadMore");
+const toggleButtons = document.querySelectorAll('.toggleButtonReadMore');
+const moreContentSpans = document.querySelectorAll('.moreContent');
 
-let isShowMore = false;
- 
-toggleLinkReadMore.addEventListener('click', (event)=>{
-    event.preventDefault();
-    isShowMore = !isShowMore;
-    if (isShowMore){
-        moreContent.style.display = "block";
-        toggleLinkReadMore.textContent = "Read Less";
+toggleButtons.forEach((button, index) => {
+  button.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevents the page from jumping to the top
 
+    const hiddenText = moreContentSpans[index];
+
+    if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
+      hiddenText.style.display = 'inline';
+      button.textContent = 'Read Less';
     } else {
-        moreContent.style.display = "none";
-        toggleLinkReadMore.textContent = "Read More";
+      hiddenText.style.display = 'none';
+      button.textContent = 'Read More';
     }
+  });
 });
-
 
 
 
