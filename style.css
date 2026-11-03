@@ -694,7 +694,7 @@ nav ul li a {
     grid-row: 2 / 3;
     position: relative;
 }
-.project-2-text a{
+.project-1-text a,.project-2-text a,.project-3-text a,.project-4-text a{
     display: flex;
     justify-content: right;
     margin: 1rem 5rem 1rem 0;
@@ -702,7 +702,7 @@ nav ul li a {
     cursor: pointer;
     transition: all .5s ease;
 }
-.project-2-text a:hover {
+.project-1-text a:hover,.project-2-text a:hover,.project-3-text a:hover,.project-4-text a:hover {
     color: var(--tertiary-tint);
 }
 .project-4-text {
