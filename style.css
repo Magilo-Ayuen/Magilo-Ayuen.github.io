@@ -627,6 +627,10 @@ nav ul li a {
 .my-projects {
     margin-top: 4rem;
 }
+/* --- for moreProjects' section --- */
+.my-more-projects {
+    margin-top: 6rem;
+}
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
