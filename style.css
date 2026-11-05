@@ -750,9 +750,9 @@ nav ul li a {
 .testimonials-header-text {
     margin-left: 19rem;
 }
-.testSubtitle {
+/* .testSubtitle {
     color: var(--white);
-}
+} */
 .testimonials-header {
     margin: 3rem 0;
 }
