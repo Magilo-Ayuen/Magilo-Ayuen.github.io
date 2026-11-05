@@ -582,7 +582,6 @@ nav ul li a {
     color: var(--tertiary-shade);
 }
 .service-1 {
-    /* background: var(--grey-base); */
     border: solid 5px var(--grey-base);
     border-radius: 20px;
     padding: 1rem;
@@ -596,7 +595,6 @@ nav ul li a {
 }
 
 .service-2 {
-    /* background: var(--grey-base); */
     border: solid 5px var(--grey-base);
     border-radius: 20px;
     padding: 1rem;
@@ -608,7 +606,6 @@ nav ul li a {
 }
 
 .service-3 {
-    /* background: var(--grey-base); */
     border: solid 5px var(--grey-base);
     border-radius: 20px;
     padding: 1rem;
@@ -619,7 +616,6 @@ nav ul li a {
 }
 
 .service-4 {
-    /* background: var(--grey-base); */
     border: solid 5px var(--grey-base);
     border-radius: 20px;
     padding: 1rem;
@@ -766,7 +762,8 @@ nav ul li a {
 .testimonials {
     width: 100%;
     height: 60rem;
-    background: var(--secondary-shade);
+    /* background: var(--secondary-shade); */
+    background: var(--grey-base);
 
     position: relative;
     width: 100vw;
@@ -934,7 +931,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--secondary-shade);
+    /* background: var(--secondary-shade); */
+    background: var(--grey-base);
     position: relative;
     width: 100vw;
     left: 50%;
