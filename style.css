@@ -100,15 +100,15 @@ Shade: #212529
     /* COLORS */
     --primary-base: #ccc5b9;
     --primary-tint: #403d39;
-    --primary-shade: #252422;
+    --primary-shade: #0c0f0a;
 
     --secondary-base: #eb5e28;
     --secondary-tint: #00FFFF;
     --secondary-shade: #6157E1;
 
-    --tertiary-base: #374854;
-    --tertiary-tint: #ffe8cc;
-    --tertiary-shade: #D9E4E0;
+    --tertiary-base: #ffd500;
+    --tertiary-tint: #fbff12;
+    --tertiary-shade: #f35b04;
 
     --grey-base: #495057;
     --grey-tint:  #fdfdfd;
@@ -187,7 +187,7 @@ span{
     padding: 1.4rem 5rem;
     border-radius: 10px;
     text-decoration: none;
-    color: var(--white);
+    color: var(--tertiary-base);
     transition: background .5s;
     font-size: 3rem;
     cursor: pointer;
@@ -217,8 +217,7 @@ span{
 .download {
     margin: 0 4rem;
     font-size: 3.2rem;
-    color: var(--secondary-shade);
-    
+    color: var(--tertiary-base);
 }
 .download::after{
     content: '';
@@ -390,6 +389,7 @@ nav ul li a {
 }
 .about-me-heading {
     margin: 2rem 0;
+    color: var(--tertiary-base);
 }
 .paragraphs-about-me {
     font-size: 2.4rem;
@@ -563,7 +563,7 @@ nav ul li a {
     margin-bottom: 6rem;
 }
 .services-exp {
-    color: var(--secondary-shade);
+    color: var(--tertiary-base);
     font-size: 2rem;
     font-weight: 700;
     margin: 2rem 0;
@@ -666,7 +666,7 @@ nav ul li a {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(99, 98, 98, 0.6), var(--tertiary-tint) );
+    background: linear-gradient(rgba(99, 98, 98, 0.6), var(--grey-base) );
     position: absolute;
     left: 0;
     bottom: 0; 
@@ -682,9 +682,10 @@ nav ul li a {
 .layer h3 {
     margin-top: 3rem;
     font-weight: 800;
+    color: var(--tertiary-base);
 }
 .layer a {
-    color: var(--secondary-shade);
+    color: var(--secondary-tint);
     text-decoration: none;
     font-size: 4rem;
 }
@@ -746,6 +747,9 @@ nav ul li a {
 .testimonials-header {
     margin: 3rem 0;
 }
+/* .testimonials-header h1 {
+    color: var(--tertiary-base);
+} */
 .testimonials {
     width: 100%;
     height: 60rem;
@@ -827,21 +831,24 @@ nav ul li a {
     font-size: 4.8rem;
     margin: 5rem 0;
 }
+.contact-me-h1 {
+    color: var(--tertiary-base);
+}
 .contact-email a{
     display: inline-block;
-    color: var(--tertiary-tint);
+    color: var(--white);
     font-size: 2.5rem;
 }
 .contact-download {
     font-size: 3.2rem;
-    color: var(--tertiary-tint);
+    color: var(--white);
     margin: 4rem 0;
 }
 .contact-download::after{
     content: '';
     width: 0%;
     height: 5px;
-    background: var(--secondary-shade);
+    background: var(--tertiary-base);
     display: block;
     transition: 0.5s;
     margin-top: .3rem;
@@ -856,12 +863,12 @@ nav ul li a {
     text-decoration: none;
     font-size: 3rem;
     margin-right: 1.5rem;
-    color: var(--tertiary-tint);
+    color: var(--white);
     display: inline-block;
     transition: transform .5s;
 }
 .social-iconss a:hover {
-    color: var(--secondary-tint);
+    color: var(--tertiary-base);
     transform: translateY(-5px);
 }
 .download .downcon{
@@ -875,7 +882,7 @@ form input, form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background: var(--tertiary-shade);
+    background: var(--white);
     padding: 1.5rem;
     margin: 1.5rem 0;
     color: var(--grey-base);
@@ -939,7 +946,7 @@ footer {
     text-decoration: none;
     font-size: 3rem;
     margin: auto 1.5rem;
-    color: var(--secondary-base);
+    color: var(--tertiary-shade);
     display: inline-block;
     transition: transform .5s;
 }
